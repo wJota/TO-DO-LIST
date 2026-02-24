@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>To Do list</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./scripts/scripts.js" defer></script>
+    <title>To Do Avançado</title>
 </head>
 <body>
-    <div class="card"> 
-        <input id="tarefa" type="text" placeholder="Escreva uma tarefa"/>
-        <button id="salvar">Salvar</button>
-        <div id="tarefasSalvas"></div>
-    </div>
-    <script src="./script.js"></script>
+   <div class="todo-container">
+        <header>
+            <h1>To do Avançado</h1>
+        </header>/
+        <form id="todo-form">
+            <p>Adicione a sua tarefa:</p>
+            <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+            <button type="submit">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </form>
+        <form id="edit-form">
+            <p>Edite a sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar">
+                    <button id="erase-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+   </div>
 </body>
 </html>
