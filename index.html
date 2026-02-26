@@ -24,7 +24,7 @@
           </button>
         </div>
         </form>
-        <form id="edit-form" class="">
+        <form id="edit-form" class="hide">
             <p>Edite a sua tarefa</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -54,29 +54,30 @@
             </div>
         </div>
         <div id="todo-list">
-            <h3>Estou fazendo alguma coisa</h3>
-            <button id="finish-todo">
+           <div class="todo done"> 
+                <h3>Estou fazendo alguma coisa</h3>
+                <button id="finish-todo">
                 <i class="fa-solid fa-check"></i>
-            </button> 
-            <button id="edit-todo">
+                </button> 
+                <button id="edit-todo">
                 <i class="fa-solid fa-pen"></i>
-            </button> 
-            <button id="remove-todo">
+                </button> 
+                <button id="remove-todo">
                 <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-         <div id="todo-list">
-            <h3>Estudar JavaScript</h3>
-            <button id="finish-todo">
+                </button>
+            </div> 
+            <div class="todo">
+                <h3>Estudar JavaScript</h3>
+                <button id="finish-todo">
                 <i class="fa-solid fa-check"></i>
-            </button>
-            <button id="edit-todo">
+                </button>
+                <button id="edit-todo">
                 <i class="fa-solid fa-pen"></i>
-            </button>
-            <button id="remove-todo">
+                </button>
+                <button id="remove-todo">
                 <i class="fa-solid fa-xmark"></i>
-            </button>
-
+             </button>
+            </div>       
         </div>
    </div>
 </body>
